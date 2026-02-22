@@ -1,0 +1,34 @@
+/* Carousel Color Theme */
+:root {
+  --carousel-stroke-width: 12px;
+}
+
+/* No sign - red */
+.carousel-slide:nth-child(1) {
+  --carousel-primary-color: #ff0000;
+}
+
+/* Surveillance camera - black */
+.carousel-slide:nth-child(2) {
+  --carousel-primary-color: #000000;
+}
+
+/* Eye - blue */
+.carousel-slide:nth-child(3) {
+  --carousel-primary-color: #0066ff;
+}
+
+/* Ellipsis - black */
+.carousel-slide:nth-child(4) {
+  --carousel-primary-color: #000000;
+}
+
+/* Question mark - black */
+.carousel-slide:nth-child(5) {
+  --carousel-primary-color: #000000;
+}
+
+/* Mac computer - black */
+.carousel-slide:nth-child(6) {
+  --carousel-primary-color: #000000;
+}
