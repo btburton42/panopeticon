@@ -1,45 +1,13 @@
-# Surveillance Carousel
+# panopeticon
 
-A responsive single-page website built with Astro featuring an SVG carousel that cycles through three icons:
-- 🚫 No Sign
-- 📹 Surveillance Camera
-- 👁️ Eye
+NOPE.
 
-## Features
+Someday I'll have a way for you to contribute to NOPE. Right now it's mostly me and the robots.
 
-- **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
-- **SVG Carousel**: Smooth transitions between three custom SVG illustrations
-- **Interactive Controls**: 
-  - Previous/Next buttons to manually cycle through slides
-  - Clickable indicators to jump to a specific slide
-  - Auto-cycling every 4 seconds
-- **Beautiful UI**: Glassmorphism design with gradient background
-
-## Project Structure
-
-```
-src/
-├── layouts/
-│   └── Layout.astro       # Main layout component
-├── components/
-│   └── Carousel.astro     # Carousel component with SVGs
-└── pages/
-    └── index.astro        # Home page
-```
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ and npm installed
 
 ### Installation
 
-1. Navigate to the project directory:
-```bash
-cd /Users/tylerburton/Repos/panopeticon
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
@@ -51,7 +19,7 @@ Start the development server:
 npm run dev
 ```
 
-The site will be available at `http://localhost:3000`
+The site will be available at `http://localhost:4321`
 
 ### Build
 
