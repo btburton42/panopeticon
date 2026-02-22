@@ -1,0 +1,82 @@
+---
+/**
+ * Icon Component
+ *
+ * A reusable, accessible icon component that renders SVGs from the icon library.
+ *
+ * @example
+ * <Icon name="no-sign" size="lg" label="Stop sign" />
+ * <Icon name="eye" size={64} decorative />
+ */
+
+import type { IconName, IconProps, IconSize } from '../icons/types';
+import { ICON_SIZE_MAP } from '../icons/types';
+
+interface Props extends IconProps {}
+
+const {
+  name,
+  size = 'md',
+  class: className = '',
+  label,
+  decorative = false,
+} = Astro.props;
+
+// Calculate size in pixels
+const sizeInPx = typeof size === 'number' ? size : ICON_SIZE_MAP[size as IconSize];
+
+// Validate icon name
+const validIcons: IconName[] = [
+  'no-sign',
+  'surveillance-camera',
+  'eye',
+  'ellipsis',
+  'question-mark',
+  'retro-mac',
+  'menacing-mac',
+];
+
+if (!validIcons.includes(name)) {
+  console.warn(`Icon "${name}" not found in icon library`);
+}
+
+// Import the SVG content
+const iconModules = import.meta.glob<string>('../icons/*.svg', { query: '?raw', import: 'default', eager: true });
+const iconPath = `../icons/${name}.svg`;
+const svgContent = iconModules[iconPath] || '';
+
+// Process SVG to add attributes
+const processedSvg = svgContent
+  .replace(/<svg/, `<svg width="${sizeInPx}" height="${sizeInPx}"`)
+  .replace(/\s*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/, '');
+---
+
+<span
+  class={`icon icon--${name} ${className}`}
+  style={`width: ${sizeInPx}px; height: ${sizeInPx}px; display: inline-flex; align-items: center; justify-content: center;`}
+  role={decorative ? undefined : 'img'}
+  aria-label={decorative ? undefined : label}
+  aria-hidden={decorative ? 'true' : undefined}
+>
+  <Fragment set:html={processedSvg} />
+</span>
+
+<style>
+  .icon {
+    line-height: 0;
+  }
+
+  .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Ensure SVG uses currentColor by default */
+  .icon svg [fill]:not([fill="white"]):not([fill="black"]):not([fill="#E63946"]) {
+    fill: currentColor;
+  }
+
+  .icon svg [stroke]:not([stroke="white"]):not([stroke="black"]) {
+    stroke: currentColor;
+  }
+</style>

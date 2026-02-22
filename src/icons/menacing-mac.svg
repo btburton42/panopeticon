@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect
+        x="15"
+        y="15"
+        width="70"
+        height="60"
+        stroke="currentColor"
+        stroke-width="8"
+        fill="none"
+        rx="0"
+    />
+    <rect x="15" y="75" width="70" height="10" fill="currentColor"/>
+
+    <path d="M30 32 L42 40 L38 45 L26 37 Z" fill="currentColor"/>
+    <path d="M70 32 L58 40 L62 45 L74 37 Z" fill="currentColor"/>
+
+    <path d="M30 42 L42 42 L36 50 Z" fill="#E63946"/>
+    <path d="M70 42 L58 42 L64 50 Z" fill="#E63946"/>
+
+    <path
+        d="M30 62 L36 58 L43 62 L50 58 L57 62 L64 58 L70 62"
+        stroke="currentColor"
+        stroke-width="5"
+        fill="none"
+        stroke-linejoin="miter"
+    />
+
+    <path d="M50 44 L47 52 L53 52 Z" fill="currentColor"/>
+</svg>

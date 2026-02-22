@@ -1,169 +1,43 @@
 ---
 import "../styles/carousel.css";
+import Icon from "./Icon.astro";
 ---
 
 <div class="carousel-container">
     <div class="carousel">
-        <!-- No Sign SVG -->
+        <!-- No Sign Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    stroke="black"
-                    stroke-width="12"
-                    fill="none"></circle>
-                <line
-                    x1="21.7"
-                    y1="21.7"
-                    x2="78.3"
-                    y2="78.3"
-                    stroke="black"
-                    stroke-width="12"
-                    stroke-linecap="square"></line>
-            </svg>
+            <Icon name="no-sign" size="full" label="No symbol" />
         </div>
 
-        <!-- Surveillance Camera SVG -->
+        <!-- Surveillance Camera Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect x="20" y="30" width="50" height="30" fill="black"></rect>
-                <path d="M70 35 L85 30 L85 60 L70 55 Z" fill="black"></path>
-                <circle cx="30" cy="45" r="6" fill="white"></circle>
-                <rect x="40" y="60" width="8" height="20" fill="black"></rect>
-                <rect x="30" y="80" width="30" height="6" fill="black"></rect>
-            </svg>
+            <Icon name="surveillance-camera" size="full" label="Surveillance camera" />
         </div>
 
-        <!-- Eye SVG -->
+        <!-- Eye Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M10 50 C25 20 75 20 90 50 C75 80 25 80 10 50 Z"
-                    stroke="black"
-                    stroke-width="10"
-                    fill="none"></path>
-                <circle cx="50" cy="50" r="15" fill="#E63946"></circle>
-                <circle cx="50" cy="50" r="6" fill="black"></circle>
-            </svg>
+            <Icon name="eye" size="full" label="Eye symbol" />
         </div>
 
-        <!-- Ellipsis SVG -->
+        <!-- Ellipsis Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <circle cx="20" cy="50" r="8" fill="black"></circle>
-                <circle cx="50" cy="50" r="8" fill="black"></circle>
-                <circle cx="80" cy="50" r="8" fill="black"></circle>
-            </svg>
+            <Icon name="ellipsis" size="full" label="Ellipsis" />
         </div>
 
-        <!-- Question Mark SVG -->
+        <!-- Question Mark Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M30 40 C30 15 70 15 70 40 C70 55 50 55 50 70"
-                    stroke="black"
-                    stroke-width="14"
-                    fill="none"
-                    stroke-linecap="square"></path>
-                <rect x="43" y="80" width="14" height="14" fill="black"></rect>
-            </svg>
+            <Icon name="question-mark" size="full" label="Question mark" />
         </div>
 
-        <!-- Retro Mac Computer SVG -->
+        <!-- Retro Mac Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect
-                    x="15"
-                    y="15"
-                    width="70"
-                    height="60"
-                    stroke="black"
-                    stroke-width="8"
-                    fill="none"
-                    rx="4"></rect>
-                <rect x="15" y="75" width="70" height="10" fill="black"></rect>
-                <rect x="35" y="35" width="8" height="8" fill="black"></rect>
-                <rect x="57" y="35" width="8" height="8" fill="black"></rect>
-                <path
-                    d="M35 55 Q50 65 65 55"
-                    stroke="black"
-                    stroke-width="6"
-                    fill="none"
-                    stroke-linecap="round"></path>
-                <path
-                    d="M50 45 L50 52"
-                    stroke="black"
-                    stroke-width="6"
-                    fill="none"></path>
-            </svg>
+            <Icon name="retro-mac" size="full" label="Retro Macintosh" />
         </div>
 
-        <!-- Menacing Mac Computer SVG -->
+        <!-- Menacing Mac Icon -->
         <div class="carousel-slide">
-            <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect
-                    x="15"
-                    y="15"
-                    width="70"
-                    height="60"
-                    stroke="black"
-                    stroke-width="8"
-                    fill="none"
-                    rx="0"></rect>
-                <rect x="15" y="75" width="70" height="10" fill="black"></rect>
-
-                <path d="M30 32 L42 40 L38 45 L26 37 Z" fill="black"></path>
-                <path d="M70 32 L58 40 L62 45 L74 37 Z" fill="black"></path>
-
-                <path d="M30 42 L42 42 L36 50 Z" fill="#E63946"></path>
-                <path d="M70 42 L58 42 L64 50 Z" fill="#E63946"></path>
-
-                <path
-                    d="M30 62 L36 58 L43 62 L50 58 L57 62 L64 58 L70 62"
-                    stroke="black"
-                    stroke-width="5"
-                    fill="none"
-                    stroke-linejoin="miter"></path>
-
-                <path d="M50 44 L47 52 L53 52 Z" fill="black"></path>
-            </svg>
+            <Icon name="menacing-mac" size="full" label="Menacing computer" />
         </div>
     </div>
 
@@ -179,6 +53,7 @@ import "../styles/carousel.css";
             <span class="indicator" data-index="3"></span>
             <span class="indicator" data-index="4"></span>
             <span class="indicator" data-index="5"></span>
+            <span class="indicator" data-index="6"></span>
         </div>
         <button class="carousel-button next" aria-label="Next slide"
             >&gt;</button
@@ -219,11 +94,14 @@ import "../styles/carousel.css";
         opacity: 1;
     }
 
-    .carousel-svg {
+    .carousel-slide :global(.icon) {
         width: 100%;
         height: 100%;
         max-width: 450px;
         max-height: 450px;
+    }
+
+    .carousel-slide :global(.icon svg) {
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.15));
     }
 
